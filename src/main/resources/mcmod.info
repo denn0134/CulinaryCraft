@@ -1,0 +1,16 @@
+[
+{
+  "modid": "culinarycraft",
+  "name": "CulinaryCraft",
+  "description": "Cooking with MineCraft.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["denn0134"],
+  "credits": "Martijn and Wuppy for their great tutorial",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

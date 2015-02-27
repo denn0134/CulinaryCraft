@@ -1,0 +1,20 @@
+tile.culinarycraft_haliteBlock.name=Salt Ore
+tile.culinarycraft_piperNigrumBlock.name=Black Pepper Bush
+
+item.culinarycraft_haliteItem.rockSalt.name=Rock Salt
+item.culinarycraft_haliteItem.tableSalt.name=Table Salt
+item.culinarycraft_hamItem.name=Tasty Ham
+item.culinarycraft_piperNigrumItem.pepperBerries.name=Pepper Berries
+item.culinarycraft_piperNigrumItem.peppercorns.name=Peppercorns
+item.culinarycraft_piperNigrumItem.blackPepper.name=Black Pepper
+item.culinarycraft_burrGrinderItem.burrGrinder.name=Burr Grinder
+item.culinarycraft_burrGrinderItem.ironBurrGrinder.name=Advanced Burr Grinder
+item.culinarycraft_grinderItem.spiceGrinder.name=Spice Grinder
+item.culinarycraft_grinderItem.spiceMill.name=Spice Mill
+
+achievement.haliteBlockAchievement=Salty Dog
+achievement.haliteBlockAchievement.desc=Mine salt ore
+achievement.haliteItemAchievement=When it rains...
+achievement.haliteItemAchievement.desc=Craft table salt
+achievement.hamItemAchievement=What a ham!
+achievement.hamItemAchievement.desc=Craft a delicious tasty ham
