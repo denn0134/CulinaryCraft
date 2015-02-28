@@ -12,6 +12,7 @@ public final class ModItems {
     public static  Item piperNigrumItem;
     public static Item burrGrinderItem;
     public static Item grinderItem;
+    public static Item carbonSteelBlendItem;
 
     public static void init(){
         haliteItem = new HaliteItem();
@@ -19,5 +20,6 @@ public final class ModItems {
         piperNigrumItem = new PiperNigrumItem(ModBlocks.piperNigrumBlock);
         burrGrinderItem = new BurrGrinderItem();
         grinderItem = new GrinderItem();
+        carbonSteelBlendItem = new CarbonSteelBlendItem();
     }
 }

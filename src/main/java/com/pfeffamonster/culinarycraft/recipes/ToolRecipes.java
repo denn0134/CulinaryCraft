@@ -41,5 +41,15 @@ public class ToolRecipes {
                 'O', new ItemStack(Blocks.obsidian, 1, 0),
                 'I', "ingotIron",
                 'G', new ItemStack(ModItems.burrGrinderItem, 1, BurrGrinderItem.BURR_GRINDER_IRON)));
+
+        //carbon steel ingots
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.carbonSteelBlendItem),
+                "CCC", "CIC", "CCC",
+                'C', new ItemStack(Items.coal),
+                'I', "ingotIron"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.carbonSteelBlendItem),
+                " C ", "CSC", " C ",
+                'C', new ItemStack(Items.coal),
+                'S', "ingotSteel"));
     }
 }

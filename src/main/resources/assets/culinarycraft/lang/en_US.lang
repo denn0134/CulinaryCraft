@@ -11,6 +11,7 @@ item.culinarycraft_burrGrinderItem.burrGrinder.name=Burr Grinder
 item.culinarycraft_burrGrinderItem.ironBurrGrinder.name=Advanced Burr Grinder
 item.culinarycraft_grinderItem.spiceGrinder.name=Spice Grinder
 item.culinarycraft_grinderItem.spiceMill.name=Spice Mill
+item.culinarycraft_carbonSteelBlendItem.name=Carbon Steel Blend
 
 achievement.haliteBlockAchievement=Salty Dog
 achievement.haliteBlockAchievement.desc=Mine salt ore
