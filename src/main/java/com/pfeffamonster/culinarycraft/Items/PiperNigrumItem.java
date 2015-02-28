@@ -113,7 +113,6 @@ public class PiperNigrumItem extends Item implements IPlantable {
                     return false;
                 }
             }
-
             else {
                 return false;
             }

@@ -171,7 +171,7 @@ public class PiperNigrumBlock extends BlockBush implements IGrowable {
         //now see if the plant will grow
         if (piperNigrumCanGrow(world, x, y, z, true)) {
             //check for a random chance that the plant will grow
-            if (random.nextInt(1) == 0) {
+            if (random.nextInt(10) == 0) {
                 int currentGrowth = world.getBlockMetadata(x, y, z);
                 if (currentGrowth == maxGrowth - 1) {
                     if (world.getBlock(x, y + 1, z) == Blocks.air) {
