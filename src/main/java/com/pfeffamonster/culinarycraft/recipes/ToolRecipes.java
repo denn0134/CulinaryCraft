@@ -17,6 +17,11 @@ import net.minecraftforge.oredict.ShapedOreRecipe;
  * Created by spdennis on 2/24/2015.
  */
 public class ToolRecipes {
+    public static void initMaterials(){
+        //carbon steel
+
+    }
+
     public static void initRecipes(){
         //burr grinders
         GameRegistry.addRecipe(new ItemStack(ModItems.burrGrinderItem, 1, BurrGrinderItem.BURR_GRINDER_STONE),
@@ -51,5 +56,12 @@ public class ToolRecipes {
                 " C ", "CSC", " C ",
                 'C', new ItemStack(Items.coal),
                 'S', "ingotSteel"));
+        GameRegistry.addSmelting(new ItemStack(ModItems.carbonSteelBlendItem), new ItemStack(ModItems.carbonSteelIngotItem), 0.5F);
+
+        //cleaver
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.cleaverItem),
+                "II ", "II ", " S ",
+                'I', new ItemStack(ModItems.carbonSteelIngotItem),
+                'S', "stickWood"));
     }
 }

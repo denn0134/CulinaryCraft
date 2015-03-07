@@ -12,6 +12,14 @@ item.culinarycraft_burrGrinderItem.ironBurrGrinder.name=Advanced Burr Grinder
 item.culinarycraft_grinderItem.spiceGrinder.name=Spice Grinder
 item.culinarycraft_grinderItem.spiceMill.name=Spice Mill
 item.culinarycraft_carbonSteelBlendItem.name=Carbon Steel Blend
+item.culinarycraft_carbonSteelIngotItem.name=Carbon Steel Ingot
+item.culinarycraft_cleaverItem.name=Cleaver
+item.culinarycraft_roastItem.beefRoast.name=Raw Beef Roast
+item.culinarycraft_roastItem.brisket.name=Raw Beef Brisket
+item.culinarycraft_roastItem.porkRoast.name=Raw Pork Butt
+item.culinarycraft_roastItem.porkBelly.name=Raw Pork Belly
+item.culinarycraft_roastItem.muttonRoast.name=Raw Mutton Shank
+item.culinarycraft_roastItem.lambRack.name=Raw Lamb Rack
 
 achievement.haliteBlockAchievement=Salty Dog
 achievement.haliteBlockAchievement.desc=Mine salt ore

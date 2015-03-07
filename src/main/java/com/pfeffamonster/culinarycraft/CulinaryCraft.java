@@ -2,6 +2,7 @@ package com.pfeffamonster.culinarycraft;
 
 import com.pfeffamonster.culinarycraft.Achievements.CraftingHandler;
 import com.pfeffamonster.culinarycraft.Achievements.CulinaryAchievements;
+import com.pfeffamonster.culinarycraft.Events.LivingEventHandler;
 import com.pfeffamonster.culinarycraft.Items.HaliteItem;
 import com.pfeffamonster.culinarycraft.Items.ModItems;
 import com.pfeffamonster.culinarycraft.Items.PiperNigrumItem;
@@ -50,6 +51,7 @@ public class CulinaryCraft {
 
         //register the crafting handler
         FMLCommonHandler.instance().bus().register(new CraftingHandler());
+        MinecraftForge.EVENT_BUS.register(new LivingEventHandler());
     }
 
     @Mod.EventHandler
