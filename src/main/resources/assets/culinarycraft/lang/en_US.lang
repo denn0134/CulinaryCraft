@@ -1,5 +1,6 @@
 tile.culinarycraft_haliteBlock.name=Salt Ore
 tile.culinarycraft_piperNigrumBlock.name=Black Pepper Bush
+tile.culinarycraft_grinderBlock.name=Burr Mill
 
 item.culinarycraft_haliteItem.rockSalt.name=Rock Salt
 item.culinarycraft_haliteItem.tableSalt.name=Table Salt

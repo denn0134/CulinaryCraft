@@ -10,11 +10,13 @@ public final class ModBlocks {
     //public static Block saltBlock;
     public static Block haliteBlock;
     public static Block piperNigrumBlock;
+    public static Block grinderBlock;
 
     public static void init(){
 
         //saltBlock = new SaltBlock();
         haliteBlock = new HaliteBlock();
         piperNigrumBlock = new PiperNigrumBlock();
+        grinderBlock = new GrinderBlock();
     }
 }
