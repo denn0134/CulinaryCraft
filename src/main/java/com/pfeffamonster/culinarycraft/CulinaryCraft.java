@@ -2,10 +2,9 @@ package com.pfeffamonster.culinarycraft;
 
 import com.pfeffamonster.culinarycraft.Achievements.CraftingHandler;
 import com.pfeffamonster.culinarycraft.Achievements.CulinaryAchievements;
+import com.pfeffamonster.culinarycraft.GUI.CulinaryGUIHandler;
 import com.pfeffamonster.culinarycraft.Events.LivingEventHandler;
-import com.pfeffamonster.culinarycraft.Items.HaliteItem;
 import com.pfeffamonster.culinarycraft.Items.ModItems;
-import com.pfeffamonster.culinarycraft.Items.PiperNigrumItem;
 import com.pfeffamonster.culinarycraft.blocks.ModBlocks;
 import com.pfeffamonster.culinarycraft.lib.Constants;
 import com.pfeffamonster.culinarycraft.recipes.CondimentRecipes;
@@ -14,14 +13,11 @@ import com.pfeffamonster.culinarycraft.recipes.ToolRecipes;
 import com.pfeffamonster.culinarycraft.world.CulinaryWorldGenerator;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.init.Items;
-import net.minecraft.item.ItemStack;
-import net.minecraft.stats.Achievement;
-import net.minecraftforge.common.AchievementPage;
 import net.minecraftforge.common.MinecraftForge;
 
 /**
@@ -31,32 +27,26 @@ import net.minecraftforge.common.MinecraftForge;
 public class CulinaryCraft {
     public static String errInvalidMetaData = "Invalid metadata for %s [%d].%n";
 
+    @SidedProxy(clientSide = "com.pfeffamonster.culinarycraft.Client.CulinaryClientProxy", serverSide = "com.pfeffamonster.culinarycraft.Server.CulinaryServerProxy")
+    public static CulinaryCommonProxy proxy;
+
+    @Mod.Instance(Constants.MOD_ID)
+    public static CulinaryCraft instance;
+
+
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event){
-        ModBlocks.init();
-        ModItems.init();
-
-        GameRegistry.registerWorldGenerator(new CulinaryWorldGenerator(), 1);
+        proxy.preInit(event);
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event){
-        //add some recipes
-        CondimentRecipes.initRecipes();
-        ToolRecipes.initRecipes();
-        FoodRecipes.initFoodRecipes();
-
-        //add the culinary achievements
-        CulinaryAchievements.initCulinaryAchievements();
-
-        //register the crafting handler
-        FMLCommonHandler.instance().bus().register(new CraftingHandler());
-        MinecraftForge.EVENT_BUS.register(new LivingEventHandler());
+        proxy.init(event);
     }
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event){
-
+        proxy.postInit(event);
     }
 
 
