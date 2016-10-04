@@ -5,6 +5,7 @@ import com.pfeffamonster.culinarycraft.Achievements.CulinaryAchievements;
 import com.pfeffamonster.culinarycraft.Events.LivingEventHandler;
 import com.pfeffamonster.culinarycraft.GUI.CulinaryGUIHandler;
 import com.pfeffamonster.culinarycraft.Items.ModItems;
+import com.pfeffamonster.culinarycraft.Items.PiperNigrumItem;
 import com.pfeffamonster.culinarycraft.blocks.ModBlocks;
 import com.pfeffamonster.culinarycraft.recipes.CondimentRecipes;
 import com.pfeffamonster.culinarycraft.recipes.FoodRecipes;
@@ -16,6 +17,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 
 /**
@@ -38,6 +40,9 @@ public class CulinaryCommonProxy {
         CondimentRecipes.initRecipes();
         ToolRecipes.initRecipes();
         FoodRecipes.initFoodRecipes();
+
+        //add grass seed generation
+        MinecraftForge.addGrassSeed(new ItemStack(ModItems.piperNigrumItem, 1, PiperNigrumItem.PIPER_NIGRUM_BERRIES), PiperNigrumItem.SEED_RARITY);
 
         //add the culinary achievements
         CulinaryAchievements.initCulinaryAchievements();

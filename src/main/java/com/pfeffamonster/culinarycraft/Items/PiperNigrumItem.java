@@ -35,6 +35,8 @@ public class PiperNigrumItem extends Item implements IPlantable {
     public static final int PIPER_NIGRUM_PEPPERCORNS = 1;
     public static final int PIPER_NIGRUM_BLACK_PEPPER = 2;
 
+    public static final int SEED_RARITY = 5;
+
     public PiperNigrumItem(Block plant) {
         this.plant = plant;
 
@@ -43,9 +45,6 @@ public class PiperNigrumItem extends Item implements IPlantable {
         setCreativeTab(CreativeTabs.tabFood);
 
         GameRegistry.registerItem(this, name);
-
-        //add black pepper seeds to tall grass drops
-        MinecraftForge.addGrassSeed(new ItemStack(ModItems.piperNigrumItem, 1, PiperNigrumItem.PIPER_NIGRUM_BERRIES), 5);
     }
 
     @Override
