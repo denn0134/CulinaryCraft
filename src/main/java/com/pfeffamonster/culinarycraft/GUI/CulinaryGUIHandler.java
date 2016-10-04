@@ -14,20 +14,11 @@ import net.minecraft.world.World;
 public class CulinaryGUIHandler implements IGuiHandler {
     @Override
     public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
-        switch(ID){
-            case CulinaryGUIs.GUI_TIMER:
-                return null;
-        }
-
         return null;
     }
 
     @Override
     public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
-        switch(ID){
-            case CulinaryGUIs.GUI_TIMER:
-                return new TimerGUI();
-        }
         return null;
     }
 }
